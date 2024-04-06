@@ -34,6 +34,7 @@ function App() {
   }
   if(!state.includes(null)){
     setWinner('draw');
+    navigator.vibrate([200, 100, 200]); 
     setTimeout(()=>{
       console.log('check')
       reset();
